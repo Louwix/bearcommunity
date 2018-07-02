@@ -18,9 +18,14 @@ const bot = new Discord.Client();
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
 
 // http://expressjs.com/en/starter/static-files.html
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
-app.listen(process.env.PORT);
+app.set('views', __dirname + '/views');
+app.set('port', (process.env.PORT || 5000))
+app.set('views engine', 'ejs')
+
+app.listen(app.get('port'));
+
 setInterval(() => {
   http.get(`https://bearcommunity.herokuapp.com/`);
 }, 15000);
@@ -98,7 +103,7 @@ fs.readFile('client_secret.json', function processClientSecrets(err, content) {
 
   // Authorize a client with the loaded credentials, then call the YouTube API.
   //See full code sample for authorize() function code.
-  app.get("/", (req, res) => {
+app.get("/", (req, res) => {
   var date = new Date();
   var month = date.getMonth();
   var hour = date.getHours();
