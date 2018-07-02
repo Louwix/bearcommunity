@@ -27,7 +27,7 @@ app.set('views engine', 'ejs')
 app.listen(app.get('port'));
 
 setInterval(() => {
-  http.get(`https://bearcommunity.herokuapp.com/`);
+  http.get(`http://bearcommunity.herokuapp.com/`);
 }, 15000);
 
 // http://expressjs.com/en/starter/basic-routing.html
