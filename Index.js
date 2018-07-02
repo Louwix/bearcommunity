@@ -22,7 +22,7 @@ app.use(express.static('public'));
 
 app.listen(process.env.PORT);
 setInterval(() => {
-  http.get(`http://${process.env.NOM_DOMAINE}.glitch.me/`);
+  http.get(`https://bearcommunity.herokuapp.com/`);
 }, 15000);
 
 // http://expressjs.com/en/starter/basic-routing.html
