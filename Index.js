@@ -163,16 +163,16 @@ function getNewToken(oauth2Client, requestData, callback) {
     scope: SCOPES
   });
   console.log('Authorize this app by visiting this url: ', authUrl);
-    //var code = process.env.CODE;
-    /*oauth2Client.getToken(code, function(err, token) {
+    var code = process.env.CODE;
+    oauth2Client.getToken(code, function(err, token) {
       if (err) {
         console.log('Error while trying to retrieve access token', err);
         return;
-      }*/
+      }
       oauth2Client.credentials = process.env.CODE;
-      //storeToken(token);
+      storeToken(token);
       callback(oauth2Client, requestData);
-    //});
+    });
   //});
 }
 
