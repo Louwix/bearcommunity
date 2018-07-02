@@ -1,0 +1,62 @@
+{
+  "name": "BearCommunity",
+  "version": "1.2.0",
+  "description": "Le meilleur bot <3",
+  "main": "node Index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/An-Idiots-Guide/guidebot.git"
+  },
+  "author": "Louwix",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/An-Idiots-Guide/guidebot/issues"
+  },
+  "homepage": "https://github.com/An-Idiots-Guide/guidebot#readme",
+  "engines": {
+    "node": "8.4.0"
+  },
+  "dependencies": {
+    "enmap": "^2.2.0",
+    "moment": "^2.22.1",
+    "moment-duration-format": "^2.2.2",
+    "express": "^4.16.3",
+    "node-opus": "^0.2.7",
+    "opusscript": "^0.0.6",
+    "bufferutil": "^3.0.4",
+    "erlpack": "discordapp/erlpack",
+    "sodium": "^2.0.3",
+    "libsodium-wrappers": "^0.7.3",
+    "uws": "^9.14.0",
+    "youtube-search": "^1.1.1",
+    "youtube-info": "^1.2.0",
+    "get-youtube-id": "^1.0.0",
+    "discord.js": "^11.3.2",
+    "ytdl-core": "^0.20.4",
+    "ejs": "^2.6.1",
+    "googleapis": "^31.0.2",
+    "google-auth-library": "^1.5.0",
+    "get-youtube-channel-id": "^0.0.4"
+  },
+  "install": {
+    "include": [
+      "^package\\.json$",
+      "^\\.env$"
+    ]
+  },
+  "restart": {
+    "exclude": [
+      "^public/",
+      "^dist/"
+    ],
+    "include": [
+      "\\.js$",
+      "\\.json"
+    ]
+  },
+  "throttle": 90000
+}

@@ -1,0 +1,81 @@
+<!-- This is a static file -->
+<!-- served         <a href='playlist'>Liste</a><p></p>from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LouwixBot</title>
+    <meta name="description" content="Bot fidèle de LouwixGame">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>LouwixBot</h1>
+      <h2>Bienvenue sur le site de configuration de LouwixBot, une création de Louwix pour le serveur Discord LouwixGame.</h2>
+    </header>
+
+    <main>
+      <p>
+        Actuellement en développement !
+      </p>
+      <article id="vocal">
+        <h3>Vocal</h3>
+        <!--<p>
+          Le bot est actuellement connecté sur le serveur vocal : <%= salon %>
+        </p>-->
+        <iframe src="https://discordapp.com/widget?id=150265383931084800&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+        <p>Connecter le bot a un salon vocal</p><a href='connection' target:'_blank'>Connexion</a>
+        <p>
+          Lancer une musique sur le bot
+        </p>
+        <form>
+          <label for='lien'>Lien Youtube de la musique : </label>
+          <input type='text' name='lien'/>
+          <button type='submit'>Ecouter</button>
+        </form>
+      </article>
+      <article id="playlist">
+        <h3>Playlist</h3>
+        <p>
+          Voici la liste des playlist disponnibles sur le bot, bientôt elle sera modifiab le depuis le site. Patiente !
+        </p>
+        <a href='playlist'>Liste</a><p></p>
+        <p>
+          Ajouter une nouvelle playlist :
+        </p>
+        <form id="addPlaylist", method="post">
+          <a id="addMusic">Ajouter une musique</a>
+          <button type="submit">Sauvagarder</button>
+        </form>
+      </article>
+      <article id="staff">
+        <h3>Modération</h3>
+        <p>
+          Cette section est en développement
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      <a href="https://glitch.com">
+        Hébergé par Glitch
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+  background-color: #A1AEC7
+}
+
+header {
+}
+
+h1 {
+  font-weight: bold;
+  color: #1A62E9;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  max-width: 600px;
+}
+
+form {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: cyan;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 3px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
+
+footer > a {
+  color: #B40D5E;
+}
+
+.nicejob {
+  text-decoration: line-through;
+}
+
+a:link, a:visited {
+  background-color: lightgrey;
+  border: 2px solid grey;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+a:hover, a:active {
+  background-color: grey;
+  color: white;
+}
+
+article {
+  border: 2px solid #F39318;
+  background-color: rgba(243, 147, 24, 0.2);
+  margin-bottom:20px;
+}
+
+article * {
+  margin-left: 2%;
+}
+
+iframe {
+  border: 2px solid red;
+  margin: 10px;
+}
+
+iframe:hover {
+  border-color: green;
+}
+
+#addPlaylist a, a:hover {
+  background-color: cyan;
+  text-decoration: underline;
+  cursor: pointer;
+  
+}
